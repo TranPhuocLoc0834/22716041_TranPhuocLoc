@@ -1,0 +1,193 @@
+*{margin: 0px auto;padding: 0px auto;}
+.material-symbols-outlined {
+vertical-align: -3px;
+margin-right: 5px;
+font-variation-settings:
+'FILL' 0,
+'wght' 400,
+'GRAD' 0,   
+'opsz' 24
+}
+.wrapper{
+    height: unset; 
+    width: unset;
+}
+body{
+    background-image: url('../img/office-desk-with-nature-background-free-photo.jpg');
+    background-size: cover;
+}
+header{
+    background-color: white;
+    height: 100px;
+    width: unset;
+    box-sizing: border-box;
+    box-shadow: 0px 10px 5px gray;
+    display: flex;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    align-items: flex-end;
+}
+.img{
+    height: 100px;
+    width: 250px;
+}   
+.menu li{   
+    display: inline-block;
+    background-color: white;
+    height: 50px;
+    width: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    list-style: none;
+    text-align: center;
+    position: relative;
+}
+.menu li a{
+    text-decoration: none;  
+    color: black;
+}
+.menu li:hover>a{
+    color: gray;
+    text-decoration: underline;
+}
+.menu li .sub-menu{
+    position: absolute;
+    padding: 15px 0;
+    list-style-type: none;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+    top: 72%;
+    opacity: 0;
+    overflow: hidden ;
+    visibility: hidden;   
+    transition: opacity 0.5s, visibility 0.5s;
+}
+.menu .sub-menu li{
+    border-bottom: 1px solid black;
+}   
+.menu .sub-menu li:hover{
+    box-shadow: 0 -5px 5px gray inset;
+}
+.menu li:hover> .sub-menu {
+    overflow: visible;
+    max-height: unset;
+    opacity: 1;
+    visibility: visible;
+}
+.menu li .sub-menu li:hover .sub-menu{
+    top: 0;
+    left: 150px;
+    padding: 0;
+}
+li:last-child{
+    border: none;
+}
+main{
+    padding: 20px 10px;
+    height: 1280px;
+    width: unset;
+    z-index: 1;
+    justify-content: space-between;
+    display: flex;
+}
+aside{
+    list-style-type: none;
+}
+.side-menu li{
+    background-color: white;
+    height: 45px;
+    width: 200px;
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-indent: 5px;
+    list-style-type: none;
+    padding: 10px 0;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+.side-menu li a{
+    color: black;
+    text-decoration: none;
+}
+.side-menu li:hover>a{
+    text-decoration: underline;
+    color: gray;
+}
+.content{
+    background-color: white;
+    height: auto;
+    width: 1080px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.aside-content li{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin: 20px 20px;
+}
+.aside-content li:first-child{
+    margin-top: 0px;
+}
+footer{
+    background-color: rgb(128, 126, 126);     
+    height: 300px;
+    width: unset;
+    color: black; 
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+}
+.footer-menu li{
+    list-style: none;
+    font-size: 15px;
+    padding: 5px;
+}
+footer ul{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+}
+footer li a{
+    text-decoration: none;
+    color: rgb(185, 185, 185);
+}
+.footer-menu li a:hover{
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    
+}
+#icon {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 5px 5px;
+    margin-top: 20px;
+    color: black;   
+}
+input[type=text]{
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+button{
+    margin-top: 15px;
+    height: 30px;
+    border-radius: 5px;
+    width: 30px;
+    background-color: rgb(255, 255, 255);
+}
+button i {
+    font-size: px;
+}
+button:hover{
+    background-color: rgb(71, 71, 71);
+}
+button:hover>i{
+    color: white;
+}
